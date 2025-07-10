@@ -1,0 +1,282 @@
+/* Administration.css - Scoped with admin- prefix */
+
+.admin-administration-container {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+}
+
+.admin-navbar {
+  background: #1f2937;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-navbar h1 {
+  font-size: 28px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Home Button */
+.admin-home-button {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+}
+
+.admin-home-button:active {
+  transform: scale(0.95);
+}
+
+.admin-contract-id {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-top: 5px;
+}
+
+.admin-alert-box {
+  background: #fef3c7;
+  color: #92400e;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+.admin-tab {
+  padding: 10px 20px;
+  background: #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-tab.admin-active {
+  background: #2563eb;
+  color: white;
+}
+
+.admin-content {
+  background: white;
+  margin: 0 20px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-header h2 {
+  font-size: 18px;
+}
+
+.admin-header button {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  text-align: left;
+  padding: 12px 8px;
+}
+
+.admin-table th {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.admin-status,
+.admin-priority,
+.admin-action-btn {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+}
+
+.admin-status.admin-pending {
+  background: #fef9c3;
+  color: #92400e;
+}
+
+.admin-status.admin-in-progress {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.admin-status.admin-complete {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.admin-priority.admin-high {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.admin-priority.admin-medium {
+  background: #fef9c3;
+  color: #92400e;
+}
+
+.admin-priority.admin-low {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.admin-progress-bar {
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 8px;
+  width: 100px;
+}
+
+.admin-progress {
+  height: 8px;
+  background: #3b82f6;
+}
+
+.admin-progress-60 {
+  width: 60%;
+}
+
+.admin-progress-80 {
+  width: 80%;
+}
+
+.admin-progress-100 {
+  width: 100%;
+  background: #10b981;
+}
+
+.admin-action-btn.admin-edit {
+  background: #3b82f6;
+  color: white;
+}
+
+.admin-action-btn.admin-view {
+  background: #6b7280;
+  color: white;
+}
+
+.admin-summary {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.admin-summary-card {
+  flex: 1;
+  min-width: 140px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.admin-summary-card h3 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.admin-summary-card.admin-total h3 {
+  color: #3b82f6;
+}
+
+.admin-summary-card.admin-overdue h3 {
+  color: #ef4444;
+}
+
+.admin-summary-card.admin-due h3 {
+  color: #f59e0b;
+}
+
+.admin-summary-card.admin-completed h3 {
+  color: #10b981;
+}
+
+.admin-summary-card.admin-score h3 {
+  color: #10b981;
+}
+
+.admin-summary-card p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.admin-legend {
+  margin: 20px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.admin-legend-overdue {
+  color: #ef4444;
+}
+
+.admin-legend-due {
+  color: #f59e0b;
+}
+
+.admin-legend-completed {
+  color: #10b981;
+}
+
+.admin-legend-total {
+  color: #3b82f6;
+}
+
+.admin-legend-score {
+  color: #10b981;
+}
+
+.admin-due-date.admin-warning {
+  color: #ef4444;
+}
+
+.admin-due-date.admin-safe {
+  color: #10b981;
+}
+
+.admin-warning-text {
+  color: #f59e0b;
+}
+
+.admin-safe-text {
+  color: #10b981;
+}
